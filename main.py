@@ -7,10 +7,10 @@ from io import BytesIO
 from PIL import Image
 
 # STREAMLIT PAGE CONFIG
-st.set_page_config(page_title="SAP License Recommendation Tool", page_icon= r"D:\SoD License Recommendation Tool\Victora Logo.png", layout="wide")
+st.set_page_config(page_title="SAP License Recommendation Tool", page_icon= r"https://github.com/Jai-Sorout-01/SoD-License-Recommendation-Tool/blob/main/Victora%20Logo.png", layout="wide")
 
 # COMPANY LOGO
-logo_path = r"D:\SoD License Recommendation Tool\Victora Logo.png"
+logo_path = r"https://github.com/Jai-Sorout-01/SoD-License-Recommendation-Tool/blob/main/Victora%20Logo.png"
 try:
     logo = Image.open(logo_path)
     st.image(logo, width=200)
@@ -209,3 +209,4 @@ if user_file and license_master_file:
 
 else:
     st.info("⬅️ Please upload both the **User–Tcode** file and the **License Master** file to continue.")
+
