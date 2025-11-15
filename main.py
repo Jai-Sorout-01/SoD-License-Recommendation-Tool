@@ -12,14 +12,14 @@ from urllib.request import urlopen
 # ===========================
 st.set_page_config(
     page_title="SAP License Recommendation Tool",
-    page_icon="https://github.com/Jai-Sorout-01/SoD-License-Recommendation-Tool/blob/e335b1d6434fc3772c3b4613e90ef1b4d2123565/Victura%20Logo.png",
+    page_icon="https://raw.githubusercontent.com/Jai-Sorout-01/SoD-License-Recommendation-Tool/e335b1d6434fc3772c3b4613e90ef1b4d2123565/Victura%20Logo.png",
     layout="wide"
 )
 
 # ===========================
 # COMPANY LOGO (CENTERED)
 # ===========================
-logo_url = "https://github.com/Jai-Sorout-01/SoD-License-Recommendation-Tool/blob/e335b1d6434fc3772c3b4613e90ef1b4d2123565/Victura%20Logo.png"
+logo_url = "https://raw.githubusercontent.com/Jai-Sorout-01/SoD-License-Recommendation-Tool/e335b1d6434fc3772c3b4613e90ef1b4d2123565/Victura%20Logo.png"
 try:
     image_bytes = urlopen(logo_url)
     logo = Image.open(image_bytes)
@@ -192,5 +192,6 @@ if user_file and license_master_file:
 
 else:
     st.info("⬅️ Please upload both the **User–Tcode** file and the **License Master** file to continue.")
+
 
 
