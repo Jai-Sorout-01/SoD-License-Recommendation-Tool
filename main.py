@@ -30,7 +30,7 @@ except Exception as e:
 # ===========================
 # APP TITLE
 # ===========================
-st.title("💼 Victora – SAP License Recommendation Tool")
+st.title("💼 Victura – SAP License Recommendation Tool")
 
 # ===========================
 # LICENSE PRIORITY LOGIC
@@ -192,3 +192,4 @@ if user_file and license_master_file:
 
 else:
     st.info("⬅️ Please upload both the **User–Tcode** file and the **License Master** file to continue.")
+
